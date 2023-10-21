@@ -1,0 +1,15 @@
+---
+- name: Ping Pong Playbook
+  hosts: all
+  gather_facts: false
+  
+  tasks:
+    - name: Ping remote host
+      ping:
+      
+    - name: Pause for 2 seconds
+      pause:
+        seconds: 2
+        
+    - name: Ping the other host
+      ping:
